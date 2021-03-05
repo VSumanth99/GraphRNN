@@ -1,3 +1,5 @@
+Forked to fix issues arising from using the implementation on Google Colab
+
 # GraphRNN: Generating Realistic Graphs with Deep Auto-regressive Model
 This repository is the official PyTorch implementation of GraphRNN, a graph generative model using auto-regressive model.
 
