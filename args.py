@@ -6,7 +6,10 @@ class Args():
         self.clean_tensorboard = False
         ### Which CUDA GPU device is used for training
         self.cuda = 0
-
+        
+        ## What fraction of examples to take for training
+        self.training_fraction = 1
+        
         ### Which GraphRNN model variant is used.
         # The simple version of Graph RNN
         # self.note = 'GraphRNN_MLP'
