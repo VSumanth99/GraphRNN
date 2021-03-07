@@ -2,4 +2,4 @@ tensorboard-logger
 tensorflow
 networkx==1.11
 pyemd
-matplotlib=2.1.1
+matplotlib==2.1.1
