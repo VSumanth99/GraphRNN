@@ -33,7 +33,7 @@ if __name__ == '__main__':
     random.seed(123)
     shuffle(graphs)
     graphs_len = len(graphs)
-    graphs_test = graphs[int(0.8 * graphs_len):]
+    graphs_test = graphs[int(0.8 * graphs_len * args.training_fraction):]
     graphs_train = graphs[0:int(0.8*graphs_len)]
     graphs_validate = graphs[0:int(0.2*graphs_len)]
 
