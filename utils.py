@@ -14,18 +14,18 @@ import community
 import pickle
 import re
 
-import data
+# import data
 
-def citeseer_ego():
-    _, _, G = data.Graph_load(dataset='citeseer')
-    G = max(nx.connected_component_subgraphs(G), key=len)
-    G = nx.convert_node_labels_to_integers(G)
-    graphs = []
-    for i in range(G.number_of_nodes()):
-        G_ego = nx.ego_graph(G, i, radius=3)
-        if G_ego.number_of_nodes() >= 50 and (G_ego.number_of_nodes() <= 400):
-            graphs.append(G_ego)
-    return graphs
+# def citeseer_ego():
+#     _, _, G = data.Graph_load(dataset='citeseer')
+#     G = max(nx.connected_component_subgraphs(G), key=len)
+#     G = nx.convert_node_labels_to_integers(G)
+#     graphs = []
+#     for i in range(G.number_of_nodes()):
+#         G_ego = nx.ego_graph(G, i, radius=3)
+#         if G_ego.number_of_nodes() >= 50 and (G_ego.number_of_nodes() <= 400):
+#             graphs.append(G_ego)
+#     return graphs
 
 def caveman_special(c=2,k=20,p_path=0.1,p_edge=0.3):
     p = p_path
